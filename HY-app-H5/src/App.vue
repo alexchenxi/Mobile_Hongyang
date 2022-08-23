@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <!-- <transition :name="name"> -->
+
         <keep-alive :include="keepAliveList">
             <router-view :key="$route.fullPath"></router-view>
         </keep-alive>
