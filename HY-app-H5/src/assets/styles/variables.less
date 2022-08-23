@@ -1,0 +1,36 @@
+@baseImgUrl: replace(@imgUrl, '~', '');
+
+// 主色
+@theme-color: #DB0826;
+@danger-color: #FF7282;
+@warning-color: #FAB55F;
+@success-color: #47CFAE;
+@light-green: #4FC0E8;
+@red-color: #EB6877;
+@blue-color: #5F95FA;
+@white-color: #ffffff;
+// 字体颜色
+@header-text-color: #333;
+@info-color: #999999;
+
+// 背景色
+@main-bg: #EEEEEE;
+@bg-color: #F6F8FA;
+
+// top-bar高度
+@top-bar-height: 44px;
+// tab-bar高度
+@tab-bar-height: 50px;
+// search-bar高度
+@search-bar-height: 44px;
+// 底部按钮区域高度
+@button-area-height: 60px;
+
+:export {
+    topBarHeight: @top-bar-height;
+    tabBarHeight: @tab-bar-height;
+    buttonAreaHeight: @button-area-height;
+}
+
+// 管理角色主色
+@dark-theme-color: #DB0826;

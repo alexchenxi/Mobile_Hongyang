@@ -1,0 +1,112 @@
+/**
+ * vant 组件引入文件
+ */
+import Vue from 'vue'
+import {
+  Checkbox,
+  CheckboxGroup,
+  Button,
+  Toast,
+  Tab,
+  Tabs,
+  List,
+  PullRefresh,
+  Picker,
+  Popup,
+  Loading,
+  DatetimePicker,
+  Area,
+  Calendar,
+  Dialog,
+  Field,
+  Search,
+  DropdownMenu,
+  DropdownItem,
+  Cell,
+  Icon,
+  Collapse,
+  CollapseItem,
+  Col,
+  Row,
+  Divider,
+  Swipe,
+  SwipeItem,
+  Form,
+  Radio,
+  RadioGroup,
+  CellGroup,
+  Overlay,
+  TreeSelect,
+  Progress,
+  SwipeCell,
+  Switch,
+  Empty,
+  Step,
+  Steps,
+  IndexBar,
+  IndexAnchor,
+  NoticeBar,
+  Circle,
+  Popover,
+  Cascader,
+  Grid,
+  GridItem,
+  NumberKeyboard,
+  Tag,
+  Badge,
+  ShareSheet
+} from 'vant'
+import { Image as VanImage } from 'vant';
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Button)
+Vue.use(Toast)
+Vue.use(Tab)
+Vue.use(Tabs)
+Vue.use(List)
+Vue.use(PullRefresh)
+Vue.use(Picker)
+Vue.use(Popup)
+Vue.use(Loading)
+Vue.use(DatetimePicker)
+Vue.use(Area)
+Vue.use(Calendar)
+Vue.use(Dialog)
+Vue.use(Field)
+Vue.use(Search)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
+Vue.use(Cell)
+Vue.use(Swipe)
+Vue.use(SwipeItem)
+Vue.use(Icon)
+Vue.use(Collapse)
+Vue.use(CollapseItem)
+Vue.use(Col)
+Vue.use(Row)
+Vue.use(Divider)
+Vue.use(VanImage)
+Vue.use(Form)
+Vue.use(Radio)
+Vue.use(RadioGroup)
+Vue.use(CellGroup)
+Vue.use(Overlay)
+Vue.use(TreeSelect)
+Vue.use(Progress)
+Vue.use(SwipeCell)
+Vue.use(Switch)
+Vue.use(Empty)
+Vue.use(Step)
+Vue.use(Steps)
+Vue.use(IndexBar)
+Vue.use(IndexAnchor)
+Vue.use(NoticeBar)
+Vue.use(Circle)
+Vue.use(Popover)
+Vue.use(Cascader)
+Vue.use(Grid)
+Vue.use(GridItem)
+Vue.use(NumberKeyboard)
+Vue.use(Tag)
+Vue.use(Badge)
+Vue.use(ShareSheet)

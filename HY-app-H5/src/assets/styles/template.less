@@ -1,0 +1,315 @@
+// 客户列表
+.card-list {
+  padding-top: 10px;
+  .card-item {
+    background: #ffffff;
+    border-radius: 4px;
+    margin-top: 10px;
+    &:first-child {
+      margin-top: 0;
+    }
+    .top-container {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      .top-container-left {
+        align-self: center;
+        padding-left: 15px;
+      }
+      .top-container-middle {
+        width: 100%;
+      }
+      .header-section {
+        padding: 15px 15px 0;
+        .common-flex-between();
+        .header-section-left {
+          .common-flex();
+        }
+        .header-section-right {
+          flex-shrink: 0;
+          .collect-container {
+            align-self: start;
+            .icon-collect {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+        .name {
+          flex-shrink: 0;
+          font-size: 16px;
+          color: #333333;
+          font-weight: 500;
+          margin-right: 8px;
+          max-width: 120px;
+          word-break: break-all;
+        }
+        .tel {
+          font-size: 15px;
+          color: #333333;
+          font-weight: 400;
+          margin-left: 4px;
+        }
+        .tag-list {
+          .common-flex();
+          flex-wrap: wrap;
+          .tag-item {
+            .common-flex-center();
+            min-width: 45px;
+            font-size: 10px;
+            font-weight: 500;
+            height: 18px;
+            padding: 0 5px;
+            margin: 2px 6px 2px 0;
+          }
+        }
+      }
+      .body-section {
+        .common-flex-between();
+        .tag-section {
+          flex-shrink: 0;
+          padding-right: 15px;
+          padding: 15px 15px 15px 15px;
+        }
+      }
+      .field-section {
+        // .common-flex();
+        // flex-wrap: wrap;
+        padding: 15px;
+        .field-item {
+          .common-flex();
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .field-label,
+          .field-content {
+            flex-shrink: 0;
+            font-size: 13px;
+          }
+          .field-label {
+            color: #999999;
+          }
+          .field-content {
+            color: #333333;
+          }
+        }
+      }
+      .countdown-section {
+        .common-flex();
+        align-items: flex-end;
+        font-size: 13px;
+        color: #999999;
+        line-height: 21px;
+        .countdown-num {
+          font-size: 24px;
+          color: #5f95fa;
+          line-height: 24px;
+          font-weight: bold;
+          margin-right: 4px;
+        }
+        .span-pre {
+          margin-right: 4px;
+        }
+      }
+      .footer-section {
+        padding: 0 15px 15px 15px;
+        .common-flex-between();
+      }
+    }
+    .bottom-container {
+      border-top: 1px solid #eaeaea;
+      .common-flex-center();
+      .action-item {
+        position: relative;
+        .common-flex-center();
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        font-size: 15px;
+        color: #5f95fa;
+        line-height: 15px;
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 1px;
+          height: 15px;
+          margin-top: -7px;
+          background: #eaeaea;
+        }
+        &:last-child {
+          border: none;
+        }
+        &:last-child:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// 筛选
+.filter-container-top {
+  padding: 18px 15px;
+  max-height: 398px;
+  overflow: auto;
+  .filter-section {
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
+    .filter-title {
+      font-size: 16px;
+      color: #333333;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+  }
+  .custom-field {
+    .van-field {
+      border-bottom: 1px solid @info-color;
+    }
+  }
+}
+.filter-container-bottom {
+  .common-flex-between();
+  height: 50px;
+  //padding: 0 15px;
+  border-top: 1px solid #f4f4f4;
+  .van-button:last-child {
+    //margin-left: 10px;
+  }
+}
+.van-dropdown-menu {
+  height: 100%;
+  .van-dropdown-menu__bar {
+    height: 100%;
+    box-shadow: none;
+    background: none;
+    &.van-dropdown-menu__bar--opened {
+      z-index: 10;
+    }
+    .van-dropdown-menu__title {
+      font-size: 15px;
+      color: #333333;
+      padding: 0 10px 0 0;
+    }
+    .van-dropdown-menu__title::after {
+      right: 0;
+    }
+  }
+  .van-dropdown-item__option--active {
+    background: rgba(219, 8, 38, 0.1);
+  }
+}
+.multiple-filter {
+  .common-flex-between();
+  padding: 0 13px;
+  position: relative;
+  .multiple-filter-left {
+    height: 40px;
+    .group-filter {
+      .van-dropdown-menu__title {
+        .van-ellipsis {
+          max-width: 120px;
+        }
+      }
+    }
+  }
+  .multiple-filter-right {
+    height: 40px;
+    .group-filter {
+      .van-dropdown-menu__title {
+        .van-ellipsis {
+          max-width: 103px;
+        }
+      }
+    }
+  }
+}
+.tab-filter {
+  position: relative;
+  .common-flex();
+}
+.tab-filter-left {
+  .van-tabs__wrap {
+    position: relative;
+    z-index: 3;
+    padding-right: 10px;
+    margin-right: 73px;
+    box-shadow: inset -12px 0px 15px -16px rgba(51, 51, 51, 0.2);
+  }
+}
+.tab-filter-right {
+  position: absolute;
+  // top: 0;
+  right: 0;
+  width: 73px;
+  height: 40px;
+  padding-left: 13px;
+  background: #ffffff;
+  .common-flex-center();
+}
+.filter-date-title {
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+.filter-date-content {
+  font-size: 18px;
+  color: #999999;
+  font-weight: 500;
+  line-height: 1;
+}
+.date-divider {
+  width: 45px;
+  border-color: @theme-color;
+}
+.date-middle {
+  .common-flex-center();
+  // margin-top: 15px;
+  position: relative;
+  top: 15px;
+}
+.date-left {
+  text-align: left;
+}
+.date-right {
+  text-align: right;
+}
+.van-calendar__header-title {
+  height: auto;
+  line-height: 1;
+  .calendar-title {
+    padding: 24px 0;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+  }
+  .calendar-content {
+    padding: 0 15px 15px;
+    .filter-date-content {
+      color: #333333;
+    }
+  }
+}
+.van-calendar__popup .van-popup__close-icon {
+  top: 21px;
+}
+.van-calendar__weekdays {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+.van-calendar__footer {
+  box-shadow: 0 0px 1px 2px rgba(125, 126, 128, 0.08);
+}
+.van-dropdown-menu {
+  /deep/ .van-dropdown-menu__bar {
+    .van-dropdown-menu__title {
+      font-size: 13px;
+    }
+  }
+}

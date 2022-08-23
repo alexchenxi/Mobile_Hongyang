@@ -1,0 +1,244 @@
+/**
+  页面公共样式
+*/
+
+.common-page {
+    height: 100%;
+    overflow: hidden;
+}
+
+// 页面无底部tab-bar时高度
+.common-page-container {
+    height: calc(100% - @top-bar-height);
+    overflow: auto;
+}
+
+// 页面有底部tab-bar时高度
+.common-page-middle {
+    height: calc(100% - @top-bar-height - @tab-bar-height);
+    overflow: auto;
+}
+
+// 页面有底部tab-bar无头部时高度
+.common-page-content {
+    height: calc(100% - @tab-bar-height);
+    overflow: auto;
+}
+
+//底部按钮
+.common-footer-bar {
+    padding: 8px 15px;
+    .common-flex-center();
+    height: @tab-bar-height;
+    background: #fff;
+}
+
+// 固定底部按钮
+.common-fix-bottom {
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 30px);
+    height: @button-area-height;
+    padding: 0 15px;
+    // margin-bottom: 8px;
+    background: #ffffff;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//标签颜色
+.common-tag-blue {
+    color: @theme-color;
+    background: rgba(219, 8, 38, 0.1);
+}
+
+.common-tag-red,
+.common-tag-A {
+    color: @danger-color !important;
+    background: rgba(255, 114, 130, 0.1) !important;
+}
+
+.common-tag-orange {
+    color: @warning-color !important;
+    background: rgba(255, 222, 159, 0.2) !important;
+}
+.common-tag-B {
+    color: #A25FFA !important;
+    background: rgba(192, 159, 255, 0.2) !important;
+}
+.common-tag-E {
+    color: #fff !important;
+    background: rgba(#000,0.1) !important;
+}
+.common-tag-light-green,
+.common-tag-C {
+    color: @light-green !important;
+    background: rgba(79, 192, 232, 0.1) !important;
+}
+
+.common-tag-green,
+.common-tag-D {
+    color: @success-color !important;
+    background: rgba(71, 207, 174, 0.1) !important;
+}
+
+.common-tag-red {
+    color: @danger-color !important;
+    background: rgba(255, 114, 130, 0.1) !important;
+}
+
+.common-tag-gray {
+    color: #999999 !important;
+    background: rgba(153, 153, 153, 0.1)!important;
+}
+.common-tag-0 {
+    color: #FAB55F !important;
+    background: rgba(255,222,159,0.2)!important;
+}
+.common-tag-1 {
+    color: #FF8442 !important;
+    background: rgba(247,141,42,0.1)!important;
+}
+.common-tag-2 {
+    color: @theme-color !important;
+    background: rgba(219, 8, 38, 0.1)!important;
+}
+
+.common-tag-channel {
+    color: #ff8442 !important;
+    background: rgba(247, 141, 42, 0.1)!important;
+}
+.common-orange{
+  color: @warning-color !important;
+  background: rgba(255, 222, 159, 0.16) !important;
+}
+.common-blue {
+  color: @theme-color;
+  background: rgba(219, 8, 38, 0.08);
+}
+// 表单中textarea换行展示
+.common-textarea-label.van-field {
+    padding-bottom: 0;
+    margin-bottom: -10px;
+    z-index: 2;
+}
+
+.common-textarea-label.van-cell::after {
+    border-bottom: 0;
+}
+
+// 表单中label展示
+.common-field-label.van-cell::after {
+    border-bottom: 0;
+}
+
+//房源中配色
+.common-housing-green {
+    color: #333 !important;
+    //background: rgba(0, 255, 0, 0.12) !important;
+    background: #00FF00 !important;
+}
+.common-housing-newBlue {
+    color: #333;
+    //background: rgba(95,149,250,0.08);
+    background: @blue-color;
+}
+.common-housing-blue {
+    color: #333;
+    //background: rgba(141, 181, 227, 0.08);
+    background: #8DB5E3;
+}
+.common-housing-red {
+    color: #333;
+    background: @theme-color;
+    //background: rgba(219, 8, 38, 0.08);
+}
+.common-housing-light-green{
+    color: #333 !important;
+    background: @light-green !important;
+    //background: rgba(79, 192, 232, 0.08) !important;
+}
+.common-housing-orange{
+    color: #333 !important;
+    background: #FFA500 !important;
+    //background: rgba(255, 165, 0, 0.16) !important;
+}
+
+.common-housing-yellow{
+    color: #333 !important;
+    background: #FFFF00 !important;
+    //background: rgba(255, 255, 0, 0.16) !important;
+}
+.common-housing-purple{
+    color: #333 !important;
+    background: #CC00FF !important;
+    background: rgba(204, 0, 255, 0.16) !important;
+}
+.common-housing-black{
+    color: #333 !important;
+    //background: rgba(128, 128, 128, 0.16) !important;
+    background: #808080 !important;
+}
+.common-housing-skyblue{
+    color: #333 !important;
+    //background: rgba(128, 128, 128, 0.16) !important;
+    background: #81d3f8 !important;
+}
+.common-housing-light-gray{
+    color: #333 !important;
+    //color: @white-color !important;
+    background: #D2DBE6 !important;
+}
+.common-housing-white{
+    color: #333 !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+}
+.common-housing-gray{
+  color: #333 !important;
+  background: #e0e0e0 !important;
+}
+.common-collapse-title {
+    font-weight: 500;
+}
+// 报表标题左侧小竖条
+.common-report-vertical-bar {
+    margin-left: -4px;
+    font-size: 18px;
+    margin-right: 2px;
+    color: @theme-color;
+}
+
+// van-popover 气泡默认样式
+.common-pop-style {
+	font-size: 13px;
+	padding: 20px;
+	color:#666;
+	>div {
+		display: flex;
+		align-items: center;
+	}
+}
+
+// 建筑面积字段颜色
+.common-area {
+	color: @theme-color;
+	.field-name, .field-content {
+		color: @theme-color !important;
+	}
+}
+//客户列表总数
+.common-total-style{
+    height: 40px;
+    line-height: 40px;
+    padding-left:20px;
+    color: #666;
+    background: #fff;
+    .num{
+        color:@theme-color;
+        font-size: 16px;
+        font-weight: 600;
+        margin:0 6px;
+    }
+}

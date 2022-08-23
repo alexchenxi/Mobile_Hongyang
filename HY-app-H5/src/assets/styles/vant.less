@@ -1,0 +1,206 @@
+// vant 样式文件
+
+/**---dialog 开始 ---*/
+
+.van-dialog__confirm,
+.van-dialog__confirm:active {
+    background-color: @theme-color;
+    color: #fff;
+}
+
+.van-button--default {
+    font-size: 18px;
+
+    &.van-hairline--left::after {
+        border-left: none;
+    }
+}
+.grid-item {
+  height: 40px !important;
+}
+.house-grid-item {
+  width: auto !important;
+}
+.custom-calendar {
+  height: 85% !important;
+}
+.van-dialog__header {
+    padding-top: 0;
+    border-bottom: 1px solid @main-bg;
+    font-weight: 600;
+    color: @header-text-color;
+    line-height: 66px;
+}
+
+
+/**---dialog 结束 ---*/
+
+
+/**---cell 开始 ---*/
+
+.van-cell {
+    padding: 16px 15px;
+}
+
+.van-cell--required::before {
+    left: 15px;
+}
+
+.van-field__label {
+    font-size: 15px;
+    color: #333333;
+}
+
+.van-cell::after {
+    right: 0;
+}
+
+.van-field {
+    padding: 16px 15px 16px 15px;
+}
+
+.van-cell--required::before {
+    left: 9px;
+}
+
+.van-cell__right-icon {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 1px;
+}
+
+.van-field__word-limit {
+    color: #999;
+}
+
+.van-field__control {
+    font-size: 15px;
+}
+
+.textarea-style {
+    display: block;
+
+    .van-cell__title {
+        margin-bottom: 4px;
+    }
+}
+
+.van-radio--horizontal:last-child {
+    margin-right: 0;
+}
+
+/**---cell 结束 ---*/
+
+
+/**---button 开始 ---*/
+
+.van-button--save {
+    height: 44px;
+    background: linear-gradient(270deg, #DB0826 0%, #FB2E4B 100%);
+    border-radius: 24px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.van-button--filter {
+  height: 50px;
+  background: @theme-color;
+  font-size: 16px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.van-button--cancel {
+    height: 2.93rem;
+    background: #ffffff;
+    font-size: 1.067rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999999;
+}
+
+
+/**---button 结束 ---*/
+
+
+/**---calendar 开始 ---*/
+.van-calendar__day {
+    padding: 10px 0;
+    height: 40px;
+    align-items: flex-end;
+
+    .van-calendar__top-info {
+        top: 10px
+    }
+}
+
+.van-calendar__day--end,
+.van-calendar__day--start,
+.van-calendar__day--start-end,
+.van-calendar__day--multiple-middle,
+.van-calendar__day--multiple-selected {
+  background: linear-gradient(270deg, #DB0826 0%, #FB2E4B 100%);
+}
+
+.van-calendar__day--middle::after {
+    background-color: rgba(95, 149, 250, 0.08);
+    opacity: 1;
+}
+
+.van-calendar__day--middle {
+    color: #303030;
+}
+
+.van-calendar__confirm {
+    height: 44px;
+    background: linear-gradient(270deg, #DB0826 0%, #FB2E4B 100%);
+    border: none;
+    border-radius: 24px;
+}
+
+
+/**---calendar 开始 ---*/
+
+.van-checkbox__icon .van-icon,
+.van-radio__icon .van-icon {
+    border-color: #f4f4f4;
+}
+
+/**---DropdownMenu  开始 ---*/
+.van-dropdown-item {
+
+    .van-icon-success.van-dropdown-item__icon {
+        font-size: 18px;
+    }
+
+    .van-icon-success::before {
+        content: '\F02F';
+    }
+}
+
+/**---DropdownMenu  结束 ---*/
+
+
+/**---tab  开始 ---*/
+.van-tabs__line {
+    width: 18px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+/**---tab  结束 ---*/
+
+.van-cell__title span {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+// Switch 开关
+.van-switch--on {
+  background: @theme-color;
+}
+.van-overlay {
+  z-index: 2000 !important;
+}
